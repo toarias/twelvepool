@@ -1,0 +1,6 @@
+[package]
+name = "twelvepool"
+version = "0.5.0"
+
+[dependencies]
+twelvepool = "0.5.0"
