@@ -34,6 +34,7 @@ impl Watcher {
     }
 
     pub fn run(mut self) -> mpsc::UnboundedReceiver<MempoolItem> {
+        env_logger::init();
         let (sender, receiver) = mpsc::unbounded_channel();
 
         tokio::spawn(async move {
