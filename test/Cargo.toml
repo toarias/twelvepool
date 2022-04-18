@@ -6,3 +6,7 @@ edition = "2021"
 [dependencies]
 twelvepool = "0.5.0"
 tokio = { version = "1", features = ["full"] }
+
+[profile.dev]
+opt-level = 1           
+overflow-checks = false 
